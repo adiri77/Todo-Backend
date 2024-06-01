@@ -15,7 +15,7 @@ const origin = process.env.CORS_ORIGIN || 'https://to-do-frontend-omega.vercel.a
 
 const app = express();
 
-app.use(cors({ origin }));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));  // Add the extended option
 
